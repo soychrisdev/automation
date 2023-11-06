@@ -13,7 +13,7 @@ const chrome = require('selenium-webdriver/chrome');
         await emailInput.sendKeys('cmesina@inacap.cl'); // Ingresar correo
         
         const passwordInput = await driver.findElement(By.id('password'));
-        await passwordInput.sendKeys('201413'); // Ingresar correo
+        await passwordInput.sendKeys('$$'); // Ingresar correo
 
         //find this element <button class="btn btn-google m-r-5" style="background-color:#2F2252 !important; border-color: #918e8d !important;" onclick="formhash(this.form, this.form.password);"><i class="btn-icon fa fa-user"></i> Ingresar al Portal</button>
         const submitButton = await driver.findElement(By.className('btn btn-google m-r-5'));
