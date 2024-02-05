@@ -1,0 +1,6 @@
+@echo off
+echo Descargando Node.js...
+powershell -Command "Invoke-WebRequest https://nodejs.org/dist/v18.17.0/node-v18.17.0-x64.msi -OutFile nodejs.msi"
+echo Instalando Node.js...
+msiexec /i nodejs.msi /quiet
+echo Node.js instalado.
